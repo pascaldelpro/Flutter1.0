@@ -37,10 +37,16 @@ class HomePage extends StatelessWidget{
                     constraints: const BoxConstraints(
                       maxWidth: 400,
                     ),
-                    child: const Column(
+                    child: Padding(padding: const EdgeInsets.all(10), 
+                    child: Column(
                       mainAxisSize: MainAxisSize.min,
-                      children: [Text("data")],
-                    ),
+                      children: [
+                        const TextField(),
+                        const TextField(),
+                        ElevatedButton(onPressed:() {}, child: const Text("Press me"))
+                      ],
+                    ),),
+                    
                   ),
                 );
               },
